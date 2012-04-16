@@ -2,6 +2,6 @@
 
 int main(void)
 {
-	std::cerr<<"hello world"<<endl;
+	std::cerr<<"hello world"<<std::endl;
 	return 0;
 }
