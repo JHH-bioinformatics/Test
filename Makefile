@@ -79,15 +79,15 @@ distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
 ACLOCAL = ${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run aclocal-1.11
 AMTAR = ${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run tar
+AM_CXXFLAGS =  -std=gnu++0x
+AM_LDFLAGS = 
 AUTOCONF = ${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run autoconf
 AUTOHEADER = ${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run autoheader
 AUTOMAKE = ${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run automake-1.11
 AWK = mawk
-CC = gcc
-CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2
 CPPFLAGS = 
 CXX = g++
+CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
@@ -96,7 +96,9 @@ DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
+EGREP = /bin/grep -E
 EXEEXT = 
+GREP = /bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
@@ -125,7 +127,6 @@ abs_builddir = /home/jhhung/Desktop/CODE_BASE/Test
 abs_srcdir = /home/jhhung/Desktop/CODE_BASE/Test
 abs_top_builddir = /home/jhhung/Desktop/CODE_BASE/Test
 abs_top_srcdir = /home/jhhung/Desktop/CODE_BASE/Test
-ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
 am__leading_dot = .
@@ -165,7 +166,7 @@ top_build_prefix =
 top_builddir = .
 top_srcdir = .
 test_SOURCES = src/test.cpp
-test_LDADD = -lboost_thread
+test_LDADD = -lboost_thread -lpthread
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-am
 

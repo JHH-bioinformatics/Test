@@ -3,20 +3,26 @@
 LD_FLAG=-L/usr/lib/
 AC_PREREQ([2.68])
 AC_INIT([FULL-PACKAGE-NAME], [1.1], [BUG-REPORT-ADDRESS])
+
 AM_INIT_AUTOMAKE
+
 AC_CONFIG_SRCDIR([src/test.cpp])
 AC_CONFIG_HEADERS([config.h])
-
+AC_LANG([C++])
 # Checks for programs.
+
 AC_PROG_CXX
-
+AC_LANG([C++])
 # Checks for libraries.
-AC_CHECK_LIB([boost_thread], [main], "error")
+AC_CHECK_LIB([boost_thread], [main] )
+AC_CHECK_LIB([pthread], [main] )
 # Checks for header files.
-
+AC_CHECK_HEADERS([boost/thread.hpp])
 # Checks for typedefs, structures, and compiler characteristics.
-
+AC_TYPE_SIZE_T
 # Checks for library functions.
-
+AM_CXXFLAGS="$AM_CXXFLAGS -std=gnu++0x"
+AC_SUBST([AM_CXXFLAGS])
+AC_SUBST([AM_LDFLAGS])
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT

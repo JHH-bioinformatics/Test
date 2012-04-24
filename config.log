@@ -41,31 +41,31 @@ PATH: /usr/games
 ## Core tests. ##
 ## ----------- ##
 
-configure:1900: checking for a BSD-compatible install
-configure:1968: result: /usr/bin/install -c
-configure:1979: checking whether build environment is sane
-configure:2029: result: yes
-configure:2170: checking for a thread-safe mkdir -p
-configure:2209: result: /bin/mkdir -p
-configure:2222: checking for gawk
-configure:2252: result: no
-configure:2222: checking for mawk
-configure:2238: found /usr/bin/mawk
-configure:2249: result: mawk
-configure:2260: checking whether make sets $(MAKE)
-configure:2282: result: yes
-configure:2425: checking for g++
-configure:2441: found /usr/bin/g++
-configure:2452: result: g++
-configure:2479: checking for C++ compiler version
-configure:2488: g++ --version >&5
+configure:2152: checking for a BSD-compatible install
+configure:2220: result: /usr/bin/install -c
+configure:2231: checking whether build environment is sane
+configure:2281: result: yes
+configure:2422: checking for a thread-safe mkdir -p
+configure:2461: result: /bin/mkdir -p
+configure:2474: checking for gawk
+configure:2504: result: no
+configure:2474: checking for mawk
+configure:2490: found /usr/bin/mawk
+configure:2501: result: mawk
+configure:2512: checking whether make sets $(MAKE)
+configure:2534: result: yes
+configure:2684: checking for g++
+configure:2700: found /usr/bin/g++
+configure:2711: result: g++
+configure:2738: checking for C++ compiler version
+configure:2747: g++ --version >&5
 g++ (Ubuntu/Linaro 4.6.1-9ubuntu3) 4.6.1
 Copyright (C) 2011 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:2499: $? = 0
-configure:2488: g++ -v >&5
+configure:2758: $? = 0
+configure:2747: g++ -v >&5
 Using built-in specs.
 COLLECT_GCC=g++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.6.1/lto-wrapper
@@ -73,98 +73,279 @@ Target: x86_64-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.1-9ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++,go --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-plugin --enable-objc-gc --disable-werror --with-arch-32=i686 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
 gcc version 4.6.1 (Ubuntu/Linaro 4.6.1-9ubuntu3) 
-configure:2499: $? = 0
-configure:2488: g++ -V >&5
+configure:2758: $? = 0
+configure:2747: g++ -V >&5
 g++: error: unrecognized option '-V'
 g++: fatal error: no input files
 compilation terminated.
-configure:2499: $? = 4
-configure:2488: g++ -qversion >&5
+configure:2758: $? = 4
+configure:2747: g++ -qversion >&5
 g++: error: unrecognized option '-qversion'
 g++: fatal error: no input files
 compilation terminated.
-configure:2499: $? = 4
-configure:2519: checking whether the C++ compiler works
-configure:2541: g++    conftest.cpp  >&5
-configure:2545: $? = 0
-configure:2593: result: yes
-configure:2596: checking for C++ compiler default output file name
-configure:2598: result: a.out
-configure:2604: checking for suffix of executables
-configure:2611: g++ -o conftest    conftest.cpp  >&5
-configure:2615: $? = 0
-configure:2637: result: 
-configure:2659: checking whether we are cross compiling
-configure:2667: g++ -o conftest    conftest.cpp  >&5
-configure:2671: $? = 0
-configure:2678: ./conftest
-configure:2682: $? = 0
-configure:2697: result: no
-configure:2702: checking for suffix of object files
-configure:2724: g++ -c   conftest.cpp >&5
-configure:2728: $? = 0
-configure:2749: result: o
-configure:2753: checking whether we are using the GNU C++ compiler
-configure:2772: g++ -c   conftest.cpp >&5
-configure:2772: $? = 0
-configure:2781: result: yes
-configure:2790: checking whether g++ accepts -g
-configure:2810: g++ -c -g  conftest.cpp >&5
-configure:2810: $? = 0
-configure:2851: result: yes
-configure:2885: checking for style of include used by make
-configure:2913: result: GNU
-configure:2938: checking dependency style of g++
-configure:3048: result: gcc3
-configure:3113: checking for gcc
-configure:3129: found /usr/bin/gcc
-configure:3140: result: gcc
-configure:3369: checking for C compiler version
-configure:3378: gcc --version >&5
-gcc (Ubuntu/Linaro 4.6.1-9ubuntu3) 4.6.1
-Copyright (C) 2011 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-configure:3389: $? = 0
-configure:3378: gcc -v >&5
-Using built-in specs.
-COLLECT_GCC=gcc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.6.1/lto-wrapper
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.1-9ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++,go --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-plugin --enable-objc-gc --disable-werror --with-arch-32=i686 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
-Thread model: posix
-gcc version 4.6.1 (Ubuntu/Linaro 4.6.1-9ubuntu3) 
-configure:3389: $? = 0
-configure:3378: gcc -V >&5
-gcc: error: unrecognized option '-V'
-gcc: fatal error: no input files
+configure:2758: $? = 4
+configure:2778: checking whether the C++ compiler works
+configure:2800: g++    conftest.cpp  >&5
+configure:2804: $? = 0
+configure:2852: result: yes
+configure:2855: checking for C++ compiler default output file name
+configure:2857: result: a.out
+configure:2863: checking for suffix of executables
+configure:2870: g++ -o conftest    conftest.cpp  >&5
+configure:2874: $? = 0
+configure:2896: result: 
+configure:2918: checking whether we are cross compiling
+configure:2926: g++ -o conftest    conftest.cpp  >&5
+configure:2930: $? = 0
+configure:2937: ./conftest
+configure:2941: $? = 0
+configure:2956: result: no
+configure:2961: checking for suffix of object files
+configure:2983: g++ -c   conftest.cpp >&5
+configure:2987: $? = 0
+configure:3008: result: o
+configure:3012: checking whether we are using the GNU C++ compiler
+configure:3031: g++ -c   conftest.cpp >&5
+configure:3031: $? = 0
+configure:3040: result: yes
+configure:3049: checking whether g++ accepts -g
+configure:3069: g++ -c -g  conftest.cpp >&5
+configure:3069: $? = 0
+configure:3110: result: yes
+configure:3144: checking for style of include used by make
+configure:3172: result: GNU
+configure:3197: checking dependency style of g++
+configure:3307: result: gcc3
+configure:3330: checking for main  in -lboost_thread
+configure:3355: g++ -o conftest -g -O2   conftest.cpp -lboost_thread   >&5
+conftest.cpp:18:13: error: '::main' must return 'int'
+configure:3355: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "FULL-PACKAGE-NAME"
+| #define PACKAGE_TARNAME "full-package-name"
+| #define PACKAGE_VERSION "1.1"
+| #define PACKAGE_STRING "FULL-PACKAGE-NAME 1.1"
+| #define PACKAGE_BUGREPORT "BUG-REPORT-ADDRESS"
+| #define PACKAGE_URL ""
+| #define PACKAGE "full-package-name"
+| #define VERSION "1.1"
+| /* end confdefs.h.  */
+| 
+| /* Override any GCC internal prototype to avoid an error.
+|    Use char because int might match the return type of a GCC
+|    builtin and then its argument prototype would still apply.  */
+| #ifdef __cplusplus
+| extern "C"
+| #endif
+| char main  ();
+| int
+| main ()
+| {
+| return main  ();
+|   ;
+|   return 0;
+| }
+configure:3364: result: no
+configure:3375: checking for main  in -lpthread
+configure:3400: g++ -o conftest -g -O2   conftest.cpp -lpthread   >&5
+conftest.cpp:18:13: error: '::main' must return 'int'
+configure:3400: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "FULL-PACKAGE-NAME"
+| #define PACKAGE_TARNAME "full-package-name"
+| #define PACKAGE_VERSION "1.1"
+| #define PACKAGE_STRING "FULL-PACKAGE-NAME 1.1"
+| #define PACKAGE_BUGREPORT "BUG-REPORT-ADDRESS"
+| #define PACKAGE_URL ""
+| #define PACKAGE "full-package-name"
+| #define VERSION "1.1"
+| /* end confdefs.h.  */
+| 
+| /* Override any GCC internal prototype to avoid an error.
+|    Use char because int might match the return type of a GCC
+|    builtin and then its argument prototype would still apply.  */
+| #ifdef __cplusplus
+| extern "C"
+| #endif
+| char main  ();
+| int
+| main ()
+| {
+| return main  ();
+|   ;
+|   return 0;
+| }
+configure:3409: result: no
+configure:3426: checking how to run the C++ preprocessor
+configure:3453: g++ -E  conftest.cpp
+configure:3453: $? = 0
+configure:3467: g++ -E  conftest.cpp
+conftest.cpp:11:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
-configure:3389: $? = 4
-configure:3378: gcc -qversion >&5
-gcc: error: unrecognized option '-qversion'
-gcc: fatal error: no input files
+configure:3467: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "FULL-PACKAGE-NAME"
+| #define PACKAGE_TARNAME "full-package-name"
+| #define PACKAGE_VERSION "1.1"
+| #define PACKAGE_STRING "FULL-PACKAGE-NAME 1.1"
+| #define PACKAGE_BUGREPORT "BUG-REPORT-ADDRESS"
+| #define PACKAGE_URL ""
+| #define PACKAGE "full-package-name"
+| #define VERSION "1.1"
+| /* end confdefs.h.  */
+| #include <ac_nonexistent.h>
+configure:3492: result: g++ -E
+configure:3512: g++ -E  conftest.cpp
+configure:3512: $? = 0
+configure:3526: g++ -E  conftest.cpp
+conftest.cpp:11:28: fatal error: ac_nonexistent.h: No such file or directory
 compilation terminated.
-configure:3389: $? = 4
-configure:3393: checking whether we are using the GNU C compiler
-configure:3412: gcc -c   conftest.c >&5
-configure:3412: $? = 0
-configure:3421: result: yes
-configure:3430: checking whether gcc accepts -g
-configure:3450: gcc -c -g  conftest.c >&5
-configure:3450: $? = 0
-configure:3491: result: yes
-configure:3508: checking for gcc option to accept ISO C89
-configure:3572: gcc  -c -g -O2  conftest.c >&5
-configure:3572: $? = 0
-configure:3585: result: none needed
-configure:3607: checking dependency style of gcc
-configure:3717: result: gcc3
-configure:3733: checking for main in -lboost_thread
-configure:3752: gcc -o conftest -g -O2   conftest.c -lboost_thread   >&5
-configure:3752: $? = 0
-configure:3761: result: yes
-configure:3909: creating ./config.status
+configure:3526: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "FULL-PACKAGE-NAME"
+| #define PACKAGE_TARNAME "full-package-name"
+| #define PACKAGE_VERSION "1.1"
+| #define PACKAGE_STRING "FULL-PACKAGE-NAME 1.1"
+| #define PACKAGE_BUGREPORT "BUG-REPORT-ADDRESS"
+| #define PACKAGE_URL ""
+| #define PACKAGE "full-package-name"
+| #define VERSION "1.1"
+| /* end confdefs.h.  */
+| #include <ac_nonexistent.h>
+configure:3555: checking for grep that handles long lines and -e
+configure:3613: result: /bin/grep
+configure:3618: checking for egrep
+configure:3680: result: /bin/grep -E
+configure:3685: checking for ANSI C header files
+configure:3705: g++ -c -g -O2  conftest.cpp >&5
+configure:3705: $? = 0
+configure:3778: g++ -o conftest -g -O2   conftest.cpp  >&5
+configure:3778: $? = 0
+configure:3778: ./conftest
+configure:3778: $? = 0
+configure:3789: result: yes
+configure:3802: checking for sys/types.h
+configure:3802: g++ -c -g -O2  conftest.cpp >&5
+configure:3802: $? = 0
+configure:3802: result: yes
+configure:3802: checking for sys/stat.h
+configure:3802: g++ -c -g -O2  conftest.cpp >&5
+configure:3802: $? = 0
+configure:3802: result: yes
+configure:3802: checking for stdlib.h
+configure:3802: g++ -c -g -O2  conftest.cpp >&5
+configure:3802: $? = 0
+configure:3802: result: yes
+configure:3802: checking for string.h
+configure:3802: g++ -c -g -O2  conftest.cpp >&5
+configure:3802: $? = 0
+configure:3802: result: yes
+configure:3802: checking for memory.h
+configure:3802: g++ -c -g -O2  conftest.cpp >&5
+configure:3802: $? = 0
+configure:3802: result: yes
+configure:3802: checking for strings.h
+configure:3802: g++ -c -g -O2  conftest.cpp >&5
+configure:3802: $? = 0
+configure:3802: result: yes
+configure:3802: checking for inttypes.h
+configure:3802: g++ -c -g -O2  conftest.cpp >&5
+configure:3802: $? = 0
+configure:3802: result: yes
+configure:3802: checking for stdint.h
+configure:3802: g++ -c -g -O2  conftest.cpp >&5
+configure:3802: $? = 0
+configure:3802: result: yes
+configure:3802: checking for unistd.h
+configure:3802: g++ -c -g -O2  conftest.cpp >&5
+configure:3802: $? = 0
+configure:3802: result: yes
+configure:3816: checking boost/thread.hpp usability
+configure:3816: g++ -c -g -O2  conftest.cpp >&5
+configure:3816: $? = 0
+configure:3816: result: yes
+configure:3816: checking boost/thread.hpp presence
+configure:3816: g++ -E  conftest.cpp
+configure:3816: $? = 0
+configure:3816: result: yes
+configure:3816: checking for boost/thread.hpp
+configure:3816: result: yes
+configure:3827: checking for size_t
+configure:3827: g++ -c -g -O2  conftest.cpp >&5
+configure:3827: $? = 0
+configure:3827: g++ -c -g -O2  conftest.cpp >&5
+conftest.cpp: In function 'int main()':
+conftest.cpp:58:20: error: expected primary-expression before ')' token
+configure:3827: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "FULL-PACKAGE-NAME"
+| #define PACKAGE_TARNAME "full-package-name"
+| #define PACKAGE_VERSION "1.1"
+| #define PACKAGE_STRING "FULL-PACKAGE-NAME 1.1"
+| #define PACKAGE_BUGREPORT "BUG-REPORT-ADDRESS"
+| #define PACKAGE_URL ""
+| #define PACKAGE "full-package-name"
+| #define VERSION "1.1"
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_BOOST_THREAD_HPP 1
+| /* end confdefs.h.  */
+| #include <stdio.h>
+| #ifdef HAVE_SYS_TYPES_H
+| # include <sys/types.h>
+| #endif
+| #ifdef HAVE_SYS_STAT_H
+| # include <sys/stat.h>
+| #endif
+| #ifdef STDC_HEADERS
+| # include <stdlib.h>
+| # include <stddef.h>
+| #else
+| # ifdef HAVE_STDLIB_H
+| #  include <stdlib.h>
+| # endif
+| #endif
+| #ifdef HAVE_STRING_H
+| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+| #  include <memory.h>
+| # endif
+| # include <string.h>
+| #endif
+| #ifdef HAVE_STRINGS_H
+| # include <strings.h>
+| #endif
+| #ifdef HAVE_INTTYPES_H
+| # include <inttypes.h>
+| #endif
+| #ifdef HAVE_STDINT_H
+| # include <stdint.h>
+| #endif
+| #ifdef HAVE_UNISTD_H
+| # include <unistd.h>
+| #endif
+| int
+| main ()
+| {
+| if (sizeof ((size_t)))
+| 	    return 0;
+|   ;
+|   return 0;
+| }
+configure:3827: result: yes
+configure:3974: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -181,24 +362,21 @@ generated by GNU Autoconf 2.68.  Invocation command line was
 
 on jhhung-Parallels-Virtual-Platform
 
-config.status:852: creating Makefile
-config.status:852: creating config.h
-config.status:1081: executing depfiles commands
+config.status:862: creating Makefile
+config.status:862: creating config.h
+config.status:1091: executing depfiles commands
 
 ## ---------------- ##
 ## Cache variables. ##
 ## ---------------- ##
 
-ac_cv_c_compiler_gnu=yes
 ac_cv_cxx_compiler_gnu=yes
 ac_cv_env_CCC_set=
 ac_cv_env_CCC_value=
-ac_cv_env_CC_set=
-ac_cv_env_CC_value=
-ac_cv_env_CFLAGS_set=
-ac_cv_env_CFLAGS_value=
 ac_cv_env_CPPFLAGS_set=
 ac_cv_env_CPPFLAGS_value=
+ac_cv_env_CXXCPP_set=
+ac_cv_env_CXXCPP_value=
 ac_cv_env_CXXFLAGS_set=
 ac_cv_env_CXXFLAGS_value=
 ac_cv_env_CXX_set=
@@ -213,18 +391,30 @@ ac_cv_env_host_alias_set=set
 ac_cv_env_host_alias_value=
 ac_cv_env_target_alias_set=set
 ac_cv_env_target_alias_value=
-ac_cv_lib_boost_thread_main=yes
+ac_cv_header_boost_thread_hpp=yes
+ac_cv_header_inttypes_h=yes
+ac_cv_header_memory_h=yes
+ac_cv_header_stdc=yes
+ac_cv_header_stdint_h=yes
+ac_cv_header_stdlib_h=yes
+ac_cv_header_string_h=yes
+ac_cv_header_strings_h=yes
+ac_cv_header_sys_stat_h=yes
+ac_cv_header_sys_types_h=yes
+ac_cv_header_unistd_h=yes
+ac_cv_lib_boost_thread_main_=no
+ac_cv_lib_pthread_main_=no
 ac_cv_objext=o
+ac_cv_path_EGREP='/bin/grep -E'
+ac_cv_path_GREP=/bin/grep
 ac_cv_path_install='/usr/bin/install -c'
 ac_cv_path_mkdir=/bin/mkdir
 ac_cv_prog_AWK=mawk
-ac_cv_prog_ac_ct_CC=gcc
+ac_cv_prog_CXXCPP='g++ -E'
 ac_cv_prog_ac_ct_CXX=g++
-ac_cv_prog_cc_c89=
-ac_cv_prog_cc_g=yes
 ac_cv_prog_cxx_g=yes
 ac_cv_prog_make_make_set=yes
-am_cv_CC_dependencies_compiler_type=gcc3
+ac_cv_type_size_t=yes
 am_cv_CXX_dependencies_compiler_type=gcc3
 
 ## ----------------- ##
@@ -236,15 +426,15 @@ AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
 AMTAR='${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run tar'
+AM_CXXFLAGS=' -std=gnu++0x'
+AM_LDFLAGS=''
 AUTOCONF='${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run autoconf'
 AUTOHEADER='${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run autoheader'
 AUTOMAKE='${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run automake-1.11'
 AWK='mawk'
-CC='gcc'
-CCDEPMODE='depmode=gcc3'
-CFLAGS='-g -O2'
 CPPFLAGS=''
 CXX='g++'
+CXXCPP='g++ -E'
 CXXDEPMODE='depmode=gcc3'
 CXXFLAGS='-g -O2'
 CYGPATH_W='echo'
@@ -253,7 +443,9 @@ DEPDIR='.deps'
 ECHO_C=''
 ECHO_N='-n'
 ECHO_T=''
+EGREP='/bin/grep -E'
 EXEEXT=''
+GREP='/bin/grep'
 INSTALL_DATA='${INSTALL} -m 644'
 INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
@@ -277,12 +469,9 @@ SET_MAKE=''
 SHELL='/bin/bash'
 STRIP=''
 VERSION='1.1'
-ac_ct_CC='gcc'
 ac_ct_CXX='g++'
 am__EXEEXT_FALSE=''
 am__EXEEXT_TRUE='#'
-am__fastdepCC_FALSE='#'
-am__fastdepCC_TRUE=''
 am__fastdepCXX_FALSE='#'
 am__fastdepCXX_TRUE=''
 am__include='include'
@@ -332,5 +521,16 @@ target_alias=''
 #define PACKAGE_URL ""
 #define PACKAGE "full-package-name"
 #define VERSION "1.1"
+#define STDC_HEADERS 1
+#define HAVE_SYS_TYPES_H 1
+#define HAVE_SYS_STAT_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_STRING_H 1
+#define HAVE_MEMORY_H 1
+#define HAVE_STRINGS_H 1
+#define HAVE_INTTYPES_H 1
+#define HAVE_STDINT_H 1
+#define HAVE_UNISTD_H 1
+#define HAVE_BOOST_THREAD_HPP 1
 
 configure: exit 0
