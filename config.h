@@ -11,7 +11,7 @@
 #define PACKAGE_NAME "FULL-PACKAGE-NAME"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "FULL-PACKAGE-NAME VERSION"
+#define PACKAGE_STRING "FULL-PACKAGE-NAME 1.1"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "full-package-name"
@@ -20,7 +20,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "VERSION"
+#define PACKAGE_VERSION "1.1"
 
 /* Version number of package */
-#define VERSION "VERSION"
+#define VERSION "1.1"

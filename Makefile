@@ -52,7 +52,7 @@ am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_test_OBJECTS = test.$(OBJEXT)
 test_OBJECTS = $(am_test_OBJECTS)
-test_LDADD = $(LDADD)
+test_DEPENDENCIES =
 DEFAULT_INCLUDES = -I.
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -83,6 +83,9 @@ AUTOCONF = ${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run autoconf
 AUTOHEADER = ${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run autoheader
 AUTOMAKE = ${SHELL} /home/jhhung/Desktop/CODE_BASE/Test/missing --run automake-1.11
 AWK = mawk
+CC = gcc
+CCDEPMODE = depmode=gcc3
+CFLAGS = -g -O2
 CPPFLAGS = 
 CXX = g++
 CXXDEPMODE = depmode=gcc3
@@ -109,19 +112,20 @@ OBJEXT = o
 PACKAGE = full-package-name
 PACKAGE_BUGREPORT = BUG-REPORT-ADDRESS
 PACKAGE_NAME = FULL-PACKAGE-NAME
-PACKAGE_STRING = FULL-PACKAGE-NAME VERSION
+PACKAGE_STRING = FULL-PACKAGE-NAME 1.1
 PACKAGE_TARNAME = full-package-name
 PACKAGE_URL = 
-PACKAGE_VERSION = VERSION
+PACKAGE_VERSION = 1.1
 PATH_SEPARATOR = :
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = 
-VERSION = VERSION
+VERSION = 1.1
 abs_builddir = /home/jhhung/Desktop/CODE_BASE/Test
 abs_srcdir = /home/jhhung/Desktop/CODE_BASE/Test
 abs_top_builddir = /home/jhhung/Desktop/CODE_BASE/Test
 abs_top_srcdir = /home/jhhung/Desktop/CODE_BASE/Test
+ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
 am__leading_dot = .
@@ -161,6 +165,7 @@ top_build_prefix =
 top_builddir = .
 top_srcdir = .
 test_SOURCES = src/test.cpp
+test_LDADD = -lboost_thread
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-am
 

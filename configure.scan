@@ -1,17 +1,21 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
-LD_FLAG=-L/usr/lib/
+
 AC_PREREQ([2.68])
-AC_INIT([FULL-PACKAGE-NAME], [1.1], [BUG-REPORT-ADDRESS])
-AM_INIT_AUTOMAKE
-AC_CONFIG_SRCDIR([src/test.cpp])
+AC_INIT([FULL-PACKAGE-NAME], [VERSION], [BUG-REPORT-ADDRESS])
+AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_CXX
+AC_PROG_CC
 
 # Checks for libraries.
-AC_CHECK_LIB([boost_thread], [main], "error")
+# FIXME: Replace `main' with a function in `-lboostthread':
+AC_CHECK_LIB([boostthread], [main])
+# FIXME: Replace `main' with a function in `-lpthread':
+AC_CHECK_LIB([pthread], [main])
+
 # Checks for header files.
 
 # Checks for typedefs, structures, and compiler characteristics.
