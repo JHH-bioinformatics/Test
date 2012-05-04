@@ -14,7 +14,7 @@ int main(void)
 		boost::thread worker;
 		std::cerr<<c<<std::endl;
 	}
-
+	std::cerr<<"ues"<<std::endl;
 
 	return 0;
 }
